@@ -93,7 +93,7 @@
 * Wie normale Adressen (Post)
 * Wie sieht eine IP-Adresse aus (192.168.42.1)
 * großer Zahlenbereich von 0.0.0.0-255.255.255.255
-* Wikipedia: https://de.wikipedia.org/wiki/IP-Adresse
+* Wikipedia: [https://de.wikipedia.org/wiki/IP-Adresse](https://de.wikipedia.org/wiki/IP-Adresse)
 
 ---
 
@@ -107,7 +107,7 @@
     * großes Netz: 192.168.42.0, 255.255.255.0
     * kleineres Netz: 192.168.42.0, 255.255.255.128
 * (Größe des Subnetz 2^(32 - x))
-* Wikipedia: https://de.wikipedia.org/wiki/Subnetz
+* Wikipedia: [https://de.wikipedia.org/wiki/Subnetz](https://de.wikipedia.org/wiki/Subnetz)
 
 ---
 

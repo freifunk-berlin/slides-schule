@@ -20,7 +20,7 @@
 
 # Karte
 
-![http://berlin.freifunk.net/network/map/](map.jpg)
+![http://berlin.freifunk.net/network/map/](map_scaled.jpg)
 
 ---
 
@@ -62,18 +62,16 @@
 * verschiedene Frequenzbereiche im WLAN:
     * 2.4GHz (Kanal 1-13)
     * 5GHz (Kanal 36-140)
-
 * zwei wichtige Modi:
-    * Adhoc (http://berlin.freifunk.net/static/img/adhoc_netz_wikipedia.png)
-    * Accesspoint/Client
-
+    * Adhoc (alle Teilnehmer gleichwertig, koordinieren sich untereinander)
+    * Accesspoint/Client (ein Teilnehmer koordiniert den Rest )
 * verhält sich wie Kabelnetzwerk (nur dass bei Wifi Pakete oft verloren gehen)
 
 ---
 
 # Antennen
 
-* Antennen habe eine Richtung in die sie strahlen (Richtcharakteristik)
+* Antennen habe einen Richtung in die sie funken (Richtcharakteristik)
 * Verschiedene Antennentypen:
     * Rundstrahler
     * Parabolantenne
@@ -89,7 +87,7 @@
 
 ---
 
-## IP-Adressen
+# IP-Adressen
 
 * Wie normale Adressen (Post)
 * Wie sieht eine IP-Adresse aus (192.168.42.1)
@@ -98,7 +96,7 @@
 
 ---
 
-## Subnetze
+# Subnetze
 
 * Aufteilung des IP-Addressbereichs in Teilnetze
 * Subnetz ist sowas wie eine Postleitzahlbereich
@@ -113,7 +111,7 @@
 # Routing-Spiel
 
 * wir bilden zweier/dreier Gruppen (insgesamt 8 Gruppen)
-* jede Gruppe bekommt eine IP (z.B. 10.230.62.1) und eine Routingtabelle, z.B.:
+* jede Gruppe bekommt eine IP (z.B. 10.230.62.1) und eine Routingtabelle (s.u.)
 * jede Gruppe schickt ein Paket mit einer Zieladresse (10.230.62.1-8) auf die Reise
 
 <pre>
@@ -126,6 +124,7 @@
     10.230.62.8        direkter Nachbar
     10.230.62.2        direkter Nachbar
 </pre>
+
 
 ---
 

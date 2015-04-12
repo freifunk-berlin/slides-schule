@@ -90,7 +90,7 @@
 
 ## IP-Adressen
 
-* Wie normalen Adressen (Post)
+* Wie normale Adressen (Post)
 * Wie sieht eine IP-Adresse aus (192.168.42.1)
 * großer Zahlenbereich von 0.0.0.0-255.255.255.255
 * Wikipedia: https://de.wikipedia.org/wiki/IP-Adresse

@@ -6,12 +6,13 @@
 
 # Was ist Freifunk
 
-* freies Netzwerk an dem jeder/jede teilnehmen kann
+* freies Netzwerk an dem jede/jeder teilnehmen kann
+* ein Stück selbstgebautes Internet das allen gehört (Gemeingut)
+* Wie mach ich mit:
     * einfach das Netz zum Surfen nutzen
-    * das Netz mit einem Router erweitern
+    * das Netz mit einem WLAN-Router erweitern
     * Inhalte zur Verfügung stellen, z.B. Webseiten, Minecraft-Server
-    * die Freifunk Idee verbreiten
-* ein Netz das allen gehört (Gemeingut)
+    * die Freifunk Idee verbreiten (Flyer, Sticker)
 * Seite: [http://berlin.freifunk.net](http://berlin.freifunk.net)
 * twitter: [http://twitter.com/freifunk_berlin](http://twitter.com/freifunk_berlin)
 
@@ -141,3 +142,4 @@
 * Jeder Router sagt seinen Nachbarn "Hallo"
 * Jeder Router lernt so seine Nachbarn kennen
 * Aus den Informationen über die Nachbarn generiert jeder Router seine Routing-Tabelle
+* Wenn ein Router ausfällt übernehmen andere Router die Weiterleitung der Paket

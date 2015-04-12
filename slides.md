@@ -101,63 +101,43 @@
 
 * Aufteilung des IP-Addressbereichs in Teilnetze
 * Subnetz ist sowas wie eine Postleitzahlbereich
-* Subnetz entsteht aus Subnetzmaske und Netz-IP
-* Subnetzmaske sieht aus wie eine IP z.B. 255.255.255.0
+* Ein Subnetz besteht aus einer Netz-IP und einem Suffix "Größenangabe"
 * Beispiele:
-    * großes Netz: 192.168.42.0, 255.255.255.0
-    * kleineres Netz: 192.168.42.0, 255.255.255.128
-* (Größe des Subnetz 2^(32 - x))
+    * großes Netz: 192.168.42.0/24 (256 IPs: 192.168.42.0-255)
+    * kleineres Netz: 192.168.42.0/25 (128 IPs: 192.168.42.0-127)
 * Wikipedia: [https://de.wikipedia.org/wiki/Subnetz](https://de.wikipedia.org/wiki/Subnetz)
 
 ---
 
 # Routing-Spiel
 
-* wir bilden zweier/dreier Gruppen
+* wir bilden zweier/dreier Gruppen (insgesamt 8 Gruppen)
 * jede Gruppe bekommt eine IP (z.B. 10.230.62.1) und eine Routingtabelle, z.B.:
-* standard via 10.230.62.1
-* 10.230.62.23 via 10.230.62.42
+* jede Gruppe schickt ein Paket mit einer Zieladresse (10.230.62.1-8) auf die Reise
+
+<pre>
+    Ziel               Router
+    ----------------------------------
+    Standard     über  10.230.62.2
+    10.230.62.7  über  10.230.62.8
+    10.230.62.6  über  10.230.62.8
+    10.230.62.5  über  10.230.62.8
+    10.230.62.8        direkter Nachbar
+    10.230.62.2        direkter Nachbar
+</pre>
 
 ---
 
 # Router einrichten
 
 * Jede Gruppe erhält einen Router
-* Zu jedem Router gehören zwei "Mesh-IPs" und ein DHCP-Subnetz
+* Zu jedem Router gehören zwei "Mesh-IPs" und ein DHCP-Subnetz (IPs für Smartphones & Notebooks)
 * Jede Gruppe konfiguriert einen Router fürs Freifunk
-
----
-
-# IP-Konfiguration
-
-Wir nutzen die IP range: 10.230.62.0/24
-
-Mesh IPs: 10.230.62.0/27
-
-1. 10.230.62.1 und 10.230.62.11
-2. 10.230.62.2 und 10.230.62.12
-3. 10.230.62.3 und 10.230.62.13
-4. 10.230.62.4 und 10.230.62.14
-5. 10.230.62.5 und 10.230.62.15
-6. 10.230.62.6 und 10.230.62.16
-7. 10.230.62.7 und 10.230.62.17
-8. 10.230.62.8 und 10.230.62.18
-
----
-
-# Subnetz-Konfiguration (DHCP-IPs)
-
-1. 10.230.62.32/28
-2. 10.230.62.48/28
-3. 10.230.62.64/28
-4. 10.230.62.80/28
-5. 10.230.62.96/28
-6. 10.230.62.112/28
-7. 10.230.62.128/28
-8. 10.230.62.144/28
 
 ---
 
 # Grundlagen von OLSR
 
-TBD
+* Jeder Router sagt seinen Nachbarn "Hallo"
+* Jeder Router lernt so seine Nachbarn kennen
+* Aus den Informationen über die Nachbarn generiert jeder Router seine Routing-Tabelle

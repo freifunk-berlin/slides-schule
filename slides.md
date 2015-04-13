@@ -98,13 +98,38 @@
 
 # Subnetze
 
-* Aufteilung des IP-Addressbereichs in Teilnetze
-* Subnetz ist sowas wie eine Postleitzahlbereich
+* Aufteilung des IP-Adressbereichs in Teilnetze
+* Subnetz ist sowas wie ein Postleitzahlbereich
 * Ein Subnetz besteht aus einer Netz-IP und einem Suffix "Größenangabe"
 * Beispiele:
-    * großes Netz: 192.168.42.0/24 (256 IPs: 192.168.42.0-255)
-    * kleineres Netz: 192.168.42.0/25 (128 IPs: 192.168.42.0-127)
+    * `192.168.42.128/32` (1 IP: 192.168.42.128)
+    * `192.168.42.128/31` (2 IPs: 192.168.42.128-192.168.42.129)
+    * `192.168.42.128/30` (4 IPs: 192.168.42.128-192.168.42.131)
+    * `192.168.42.128/29` (8 IPs: 192.168.42.128-192.168.42.135)
+    * `192.168.42.128/28` (16 IPs: 192.168.42.128-192.168.42.143)
+    * ...
+    * `192.0.0.0/8` (16 Millionen IPs: 192.0.0.0-192.255.255.255)
 * Wikipedia: [https://de.wikipedia.org/wiki/Subnetz](https://de.wikipedia.org/wiki/Subnetz)
+
+---
+
+# Routing
+
+* Über Routingtabellen verbindet man Subnetze miteinander
+* "Welchem Router muss ich das Paket weiterreichen damit es sein Ziel erreicht?"
+* Typische Routingtabelle:
+
+<pre>
+    Ziel                   Router
+    -----------------------------------
+    Standard         über  192.168.42.1
+    10.230.0.0/16    über  10.230.62.8
+    192.168.42.0/24        direkt
+    10.230.62.8/28         direkt
+</pre>
+
+* Ein Paket mit der Ziel-IP `10.230.62.122` wird z.B. dem Router `10.230.62.8` übergeben.
+* Wikipedia: [https://de.wikipedia.org/wiki/Routingtabelle](https://de.wikipedia.org/wiki/Routingtabelle)
 
 ---
 

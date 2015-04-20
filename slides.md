@@ -174,3 +174,33 @@
 # Freifunk-Installation auf dem Schuldach
 
 ![Schulturm](andreas-schule-turm.jpg)
+
+---
+
+# Freifunk-Installation auf dem Schuldach
+
+![Ausblick](andreas-schule-ausblick.jpg)
+
+---
+
+# Freifunk-Installation auf dem Schuldach
+
+![Rathaus Neukölln](andreas-schule-rhnk.jpg)
+
+---
+
+# Was ist zu tun?
+
+* Strom- und Netzwerkkabel verlegen
+* Antennenmast und Serverschrank anbringen
+* Router-Setup planen
+* Router konfigurieren
+* Router montieren
+* Setup testen
+    * Können sich Clients verbinden?
+    * Ist die Verbindung gut genug?
+    * Bekommt man eine IP-Adresse?
+    * Funktioniert DNS? (Umwandlung Domain zu IP)
+    * Funktioniert das Routing zu den Nachbarroutern? (OLSR)
+    * Funktioniert das Routing ins Internet?
+    * Funktioniert Roaming? (BATMAN-adv)

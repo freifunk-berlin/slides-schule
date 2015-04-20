@@ -153,17 +153,24 @@
 
 ---
 
-# Router einrichten
-
-* Jede Gruppe erhält einen Router
-* Zu jedem Router gehören zwei "Mesh-IPs" und ein DHCP-Subnetz (IPs für Smartphones & Notebooks)
-* Jede Gruppe konfiguriert einen Router fürs Freifunk
-
----
-
 # Grundlagen von OLSR
 
 * Jeder Router sagt seinen Nachbarn "Hallo"
 * Jeder Router lernt so seine Nachbarn kennen
 * Aus den Informationen über die Nachbarn generiert jeder Router seine Routing-Tabelle
 * Wenn ein Router ausfällt übernehmen andere Router die Weiterleitung der Paket
+
+---
+
+# Router einrichten
+
+* Jede Gruppe erhält einen Router
+* Zu jedem Router gehören zwei "Mesh-IPs" und ein DHCP-Subnetz (IPs für Smartphones & Notebooks)
+* Jede Gruppe konfiguriert einen Router fürs Freifunk
+* Der WLAN-Name (SSID) soll nach der Gruppe benannt sein, z.B. `gruppe3.freifunk.net`.
+
+---
+
+# Freifunk-Installation auf dem Schuldach
+
+![Schulturm](andreas-schule-turm.jpg)

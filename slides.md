@@ -193,7 +193,7 @@
 
 * Strom- und Netzwerkkabel verlegen
 * Antennenmast und Serverschrank anbringen
-* Router-Setup planen
+* Router-Setup planen und dokumentieren
 * Router konfigurieren
 * Router montieren
 * Setup testen
@@ -204,3 +204,17 @@
     * Funktioniert das Routing zu den Nachbarroutern? (OLSR)
     * Funktioniert das Routing ins Internet?
     * Funktioniert Roaming? (BATMAN-adv)
+
+---
+
+# WLAN-AG
+
+Wenn ihr in der WLAN-AG mitmacht, dann könnt ihr das Freifunk-Netz aufbauen
+und nutzen wie ihr wollt!
+
+* zusätzliche Router in der Schule aufbauen
+* Dienste im Freifunk-Netz anbieten (Chat, Webseiten, Telefon, Minecraft,&nbsp;...)
+
+Tragt euch in die Liste ein, wenn ihr in der WLAN-AG mitmachen wollt!
+
+Nächster Termin?

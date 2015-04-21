@@ -1,4 +1,4 @@
-Folien für unsere Unterrichtseinheiten in Schulen
+[Folien für unsere Unterrichtseinheiten in Schulen](http://freifunk-berlin.github.io/slides-schule/presentation.html)
 
 # Folien erstellen
 

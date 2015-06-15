@@ -137,7 +137,7 @@
 
 * wir bilden zweier/dreier Gruppen (insgesamt 8 Gruppen)
 * jede Gruppe bekommt eine IP (z.B. 10.230.62.1) und eine Routingtabelle (s.u.)
-* jede Gruppe schickt ein Paket mit einer Zieladresse (10.230.62.1-8) auf die Reise
+* jede Gruppe schickt ein Paket mit seiner Quell-Adresse und einer Zieladresse (10.230.62.1-8) auf die Reise
 
 <pre>
     Ziel               Router
@@ -173,19 +173,19 @@
 
 # Freifunk-Installation auf dem Schuldach
 
-![Schulturm](andreas-schule-turm.jpg)
+![Schulhof](leibniz-schulhof.jpg)
 
 ---
 
 # Freifunk-Installation auf dem Schuldach
 
-![Ausblick](andreas-schule-ausblick.jpg)
+![Rathaus Kreuzberg](leibniz-rhxb.jpg)
 
 ---
 
 # Freifunk-Installation auf dem Schuldach
 
-![Rathaus Neukölln](andreas-schule-rhnk.jpg)
+![Terrasse](leibniz-terrasse.jpg)
 
 ---
 

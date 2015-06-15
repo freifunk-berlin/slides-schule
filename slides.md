@@ -42,10 +42,10 @@
 
 ---
 
-# Freifunk @ Andreas-Gymnasium
+# Freifunk @ Leibniz-Gymnasium
 
 * Installation auf dem Dach (Turm)
-* WLAN-Verbindung z.B. zum Rathaus Neukölln und zur Segenskirche (Prenzlauer Berg)
+* WLAN-Verbindung z.B. zum Rathaus Kreuzberg und zur Flughafen Tempelhof
 * Access Points für den Schulhof
 * Aufbau mit der WLAN-AG
 
